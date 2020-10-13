@@ -4,17 +4,17 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # User-specific files
-*.rsuser
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
-
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+*.xml
 
-# Mono auto generated files
-mono_crash.*
+#MAC files
+*.DS_Store
+#MAC files
 
 # Build results
 [Dd]ebug/
@@ -23,8 +23,6 @@ mono_crash.*
 [Rr]eleases/
 x64/
 x86/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
 bld/
 [Bb]in/
 [Oo]bj/
@@ -42,10 +40,9 @@ Generated\ Files/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
-# NUnit
+# NUNIT
 *.VisualState.xml
 TestResult.xml
-nunit-*.xml
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
@@ -59,6 +56,7 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
+**/Properties/launchSettings.json
 
 # StyleCop
 StyleCopReport.xml
@@ -66,7 +64,7 @@ StyleCopReport.xml
 # Files built by Visual Studio
 *_i.c
 *_p.c
-*_h.h
+*_i.h
 *.ilk
 *.meta
 *.obj
@@ -83,7 +81,6 @@ StyleCopReport.xml
 *.tlh
 *.tmp
 *.tmp_proj
-*_wpftmp.csproj
 *.log
 *.vspscc
 *.vssscc
@@ -169,14 +166,14 @@ DocProject/Help/Html2
 DocProject/Help/html
 
 # Click-Once directory
-# publish/
+publish/
 
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
 # Note: Comment the next line if you want to checkin your web deploy settings,
 # but database connection strings (with potential passwords) will be unencrypted
-*.pubxml
+!*.pubxml
 *.publishproj
 
 # Microsoft Azure Web App publish settings. Comment the next line if you want to
@@ -186,8 +183,6 @@ PublishScripts/
 
 # NuGet Packages
 *.nupkg
-# NuGet Symbol Packages
-*.snupkg
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
@@ -212,14 +207,12 @@ BundleArtifacts/
 Package.StoreAssociation.xml
 _pkginfo.txt
 *.appx
-*.appxbundle
-*.appxupload
 
 # Visual Studio cache files
 # files ending in .cache can be ignored
 *.[Cc]ache
 # but keep track of directories ending in .cache
-!?*.[Cc]ache/
+!*.[Cc]ache/
 
 # Others
 ClientBin/
@@ -232,7 +225,7 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 
-# Including strong name files can present a security risk
+# Including strong name files can present a security risk 
 # (https://github.com/github/gitignore/pull/2483#issue-259490424)
 #*.snk
 
@@ -263,9 +256,6 @@ ServiceFabricBackup/
 *.bim.layout
 *.bim_*.settings
 *.rptproj.rsuser
-*- [Bb]ackup.rdl
-*- [Bb]ackup ([0-9]).rdl
-*- [Bb]ackup ([0-9][0-9]).rdl
 
 # Microsoft Fakes
 FakesAssemblies/
@@ -301,8 +291,12 @@ paket-files/
 # FAKE - F# Make
 .fake/
 
-# CodeRush personal settings
-.cr/personal
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# CodeRush
+.cr/
 
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
@@ -327,7 +321,7 @@ __pycache__/
 # OpenCover UI analysis results
 OpenCover/
 
-# Azure Stream Analytics local run output
+# Azure Stream Analytics local run output 
 ASALocalRun/
 
 # MSBuild Binary and Structured Log
@@ -336,19 +330,17 @@ ASALocalRun/
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
 
-# MFractors (Xamarin productivity tool) working folder
+# MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 
-# Local History for Visual Studio
-.localhistory/
-
-# BeatPulse healthcheck temp database
-healthchecksdb
-
-# Backup folder for Package Reference Convert tool in Visual Studio 2017
-MigrationBackup/
-Publish
-YiSha.Web/YiSha.Admin.Web/DataProtection
-YiSha.Web/YiSha.Admin.WebApi/DataProtection
-YiSha.Web/YiSha.Admin.Web/Resource
-YiSha.Web/YiSha.Admin.WebApi/Resource
+*.txt
+**/env/
+/src/Legacy/GMS.Web.API
+/src/Services/Business/GMS/GMS.Web.API/Upload3/Poster/20200702/e289653c-9ac7-40f8-8fed-cb2844bf0c70.png
+/src/Services/Business/GMS/GMS.Web.API/Upload3/Poster/20200702/ca62ce71-21fe-4c15-8443-6fb5f3d558d5.png
+/src/Services/Business/GMS/GMS.Web.API/Upload3/Poster/20200702/ba336302-2cfd-489e-8666-089b15c4f0b7.png
+/src/Services/Business/GMS/GMS.Web.API/Upload3/Poster/20200702/9e4d74b9-eab6-4f1e-ae7c-755b592e43eb.png
+/src/Services/Business/GMS/GMS.Web.API/Upload3/Poster/20200702/43165a2c-97bf-42b5-a31a-d664f8ea30c7.png
+/src/Services/Business/GMS/GMS.Web.API/Upload3/Poster/20200722
+/src/Services/Business/GMS/GMS.Web.API/chrome/Linux-706915/chrome-linux/chrome
+/src/Services/Business/GMS/GMS.Web.API/chrome/Linux-706915/chrome-linux
